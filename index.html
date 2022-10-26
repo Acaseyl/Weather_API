@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/efd9680f52.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" id="header">
+    <span class="navbar-brand mx-auto">Weather Dashboard</span>
+  </nav>  
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+
+        <div class="card search-section">
+          
+          <div class="card-body">
+            <label>Search For a City:</label>            
+            <div class="input-group mb-4">
+              <input id="citySearched" type="text" class="form-control" placeholder="Chicago">
+                <div class="input-group-append">
+                  <button id="cityWeather" class="btn btn-primary" type="submit">
+                    <i id="getWeatherIcon" class="fas fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            <div id="past-searches"></div>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-9">
+        <div class="row">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="cityName">City</h5>
+              <ul>
+                <li class="card-text" id="currentTemp">Temp:</li>
+                <li class="card-text" id="currentHumidity">Humidity:</li>
+                <li class="card-text" id="currentWind">Windspeed:</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <h4 class="card-title" id="fiveDay">5-Day Forcast</h4>
+      </div>
+      <div class="row" id="forecast"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
