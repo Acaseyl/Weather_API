@@ -4,7 +4,7 @@
 The goal of this project is to link a weather API and display a 5 day forecast for any city entered.
 
 ## Screenshots
-![Weather]()
+![Weather](https://github.com/Acaseyl/Weather_API/blob/main/Weather.JPG)
 
 ## Website
 [Weather application](https://acaseyl.github.io/Weather_API/)
